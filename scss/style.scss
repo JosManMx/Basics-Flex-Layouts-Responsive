@@ -1,0 +1,18 @@
+.container{
+	display: flex;
+	width: 1000px;
+	margin: auto;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #f0f0f0;
+}
+h1{
+	text-align: center;
+}
+.layout{
+	margin:1rem;
+}
+img{
+	max-width:400px;
+	height: auto;
+}

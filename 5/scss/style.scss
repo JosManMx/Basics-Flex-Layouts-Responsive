@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	max-width: 1000px;
+	margin:auto;
+	& > * {
+		flex: 1 100%;
+	}
+}
+h1{
+	text-align: center;
+}
+
+// BASE COLOR
+$bgc: #FF9800;
+
+
+.content{
+	border: 1px solid darken($bgc, 30%);
+	display:flex;
+	justify-content:center;
+	background-color: $bgc;
+	margin:10px;
+}
+
+.header, .aside-1, .aside-2, .section, .footer{
+	background-color: lighten($bgc, 30%);
+}
+
+/* SMARTPHONE */
+@media only screen 
+and (min-width : 425px) {
+	.aside-1, .aside-2 { flex: 1 auto;}
+}
